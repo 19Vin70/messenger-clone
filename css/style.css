@@ -250,7 +250,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-    gap: 20px;
+    gap: 5px;
     z-index: 1;
   }
 
