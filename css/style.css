@@ -70,7 +70,7 @@ body {
 
 .sidebar {
     width: 300px;
-    height: 90vh;
+    height: 100vh;
     background-color: #777777;
     position: fixed;
     top: 0;
