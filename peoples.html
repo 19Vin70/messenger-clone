@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>messenger clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-right">
+                <button id="open">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h1>Chats</h1>
+            </div>
+
+            <div class="header-left">
+                <button>
+                    <i class="fa-solid fa-camera"></i>
+                </button>
+                <button>
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="left-side-content">
+            <div class="sidebar" id="sidebar">
+                <button class="sidebar-close" id="close">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                
+                <div class="profile-header">
+                    <div class="profile-content">
+                        <img src="images/openai.jpg" alt="">
+                        <h3>Marvin Saik</h3>
+                    </div>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+
+                <div class="sidebar-container">
+                    <div class="sidebar-content active">
+                        <div class="chats-content">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Chats</p>
+                        </div>
+
+                        <span>4</span>
+                    </div>
+
+                    <div class="sidebar-content">
+                        <div class="chats-content">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Marketplace</p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-content">
+                        <div class="chats-content">
+                            <i class="fa-solid fa-comments"></i>
+                            <p>Message requests</p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-content">
+                        <div class="chats-content">
+                            <i class="fa-solid fa-trash"></i>
+                            <p>Archive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bottom-navbar">
+            <nav class="navbar">
+                <a href="index.html">
+                    <i class="fa-solid fa-message"></i>
+                    <span>Chats</span>
+                </a>
+    
+                <a href="calls.html">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Calls</span>
+                </a>
+    
+                <a href="#" class="active">
+                    <i class="fa-solid fa-users"></i>
+                    <span>People</span>
+                </a>
+    
+                <a href="#">
+                    <i class="fa-solid fa-sd-card"></i>
+                    <span>Stories</span>
+                </a>
+            </nav>
+        </div>
+
+    </div>
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
