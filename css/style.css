@@ -22,18 +22,12 @@ body {
     width: 100%;
     max-width: 370px;
     /* padding: 20px; */
-    color: #fff;
+    color: #777;
     position: relative;
     overflow: hidden;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.container::-webkit-scrollbar {
-    display: none;
-    scrollbar-width: none;
 }
 
 .container .header {
@@ -92,6 +86,7 @@ body {
     transition: left 0.3s ease-in-out;
     overflow: hidden;
     padding: 40px 20px;
+    color: #fff;
 }
 
 .sidebar.active {
@@ -189,6 +184,7 @@ body {
     background-color: #777777;
     padding: 12px;
     border-radius: 10px;
+    color: #fff;
 }
 
 
@@ -247,6 +243,16 @@ body {
   
   
 
+
+  .main-container {
+    overflow-y: auto;
+  }
+
+  .main-container::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
   .main-body-container {
     position: relative;
     display: flex;
@@ -266,6 +272,11 @@ body {
     cursor: pointer;
   }
 
+  .main-body-container .msger-container.active {
+    color: #fff;
+    font-weight: 600;
+  }
+
   .main-body-container .msger-container img {
     width: 60px;
     height: 60px;
@@ -278,4 +289,143 @@ body {
 
   .main-body-container .msger-container span {
     font-size: 13px;
+  }
+
+
+.bottom-navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+  .navbar {
+    background: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 99;
+  }
+
+  .navbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #777;
+    position: relative;
+  }
+
+  .navbar a i {
+    font-size: 20px;
+  }
+
+  .navbar a span {
+    font-size: 15px;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    color: #1616f8;
+  }
+
+
+
+
+.main-calls-container {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.main-calls-container::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+
+  .calls-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .calls-container .top-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .calls-container .top-container h2 {
+    font-size: 22px;
+  }
+
+  .calls-container .top-container p {
+    font-size: 15px;
+  }
+
+  .calls-container .top-container button {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: #1616f8;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .calls-container .bottom-container {
+    gap: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calls-container .bottom-container h3 {
+    font-size: 15px;
+  }
+
+  .calls-container .bottom-container .calls-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .calls-container .bottom-container .calls-content .calls-description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .calls-container .bottom-container .calls-content .calls-description .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .calls-container .bottom-container .calls-content .calls-description h3 {
+    font-size: 20px;
+  }
+
+  .calls-container .bottom-container .calls-content .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  .calls-container .bottom-container .calls-content .icons i {
+    background: #777;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
