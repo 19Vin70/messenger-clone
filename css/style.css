@@ -48,6 +48,11 @@ body {
     gap: 10px;
 }
 
+.container .header .header-right h1 {
+  font-size: 28px;
+  color: #fff;
+}
+
 .container .header button {
     background: #777777;
     padding: 20px;
@@ -428,4 +433,127 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
+  }
+
+
+
+
+  .main-peoples-container {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px 20px 100px 20px;
+  }
+
+  .main-peoples-container::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+
+  .main-peoples-container .peoples-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px;
+  }
+
+  .main-peoples-container .peoples-container .people-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  .main-peoples-container .peoples-container .people-header button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1616f8;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .main-peoples-container .peoples-container .peoples-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .main-peoples-container .peoples-container .peoples-profile:nth-child(n+5) {
+    display: none;
+}
+
+
+  .main-peoples-container .peoples-container .peoples-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .main-peoples-container .peoples-container .peoples-profile .people-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-peoples-container .peoples-container .peoples-profile .people-description h3 {
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .main-peoples-container .peoples-container .peoples-profile .people-description span {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .fa-circle {
+    font-size: 3px;
+  }
+
+
+  .main-peoples-container #active-now {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  .peoples-content {
+    position: relative;
+  }
+
+  .peoples-content .active-people {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .peoples-content .active-people .peoples-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .peoples-content .active-people .peoples-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .peoples-content .active-people .peoples-profile .people-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .peoples-content .active-people .peoples-profile .people-description h3 {
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .peoples-content .active-people .peoples-profile .people-description span {
+    font-size: 10px;
   }
