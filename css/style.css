@@ -557,3 +557,107 @@ body {
   .peoples-content .active-people .peoples-profile .people-description span {
     font-size: 10px;
   }
+
+
+
+
+
+
+
+  .main-stories-container {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .main-stories-container::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+
+  .main-stories-container .stories-container {
+    position: relative;
+    padding: 20px 20px 100px 20px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .main-stories-container .stories-container .stories-content {
+    width: 100%;
+    max-width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .main-stories-container .stories-container .stories-content img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .main-stories-container .stories-container .stories-content .story-profile {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 4px solid #6e6efa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .main-stories-container .stories-container .stories-content .plus {
+    border: none;
+  }
+
+  .main-stories-container .stories-container .stories-content .story-profile .fa-plus {
+    font-size: 18px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-stories-container .stories-container .stories-content .story-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .main-stories-container .stories-container .stories-content span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .full-screen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.full-screen-image {
+    max-width: 350px;
+    max-height: 100%;
+    object-fit: contain;
+}
