@@ -52,3 +52,32 @@ const navbarLinks = document.querySelectorAll('.navbar a');
         });
     });
     
+
+
+
+
+
+
+    const imageLinks = document.querySelectorAll('.image-link');
+
+    imageLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const imageSrc = this.getAttribute('href');
+
+            const overlay = document.createElement('div');
+            overlay.className = 'full-screen-overlay';
+            
+            const image = document.createElement('img');
+            image.className = 'full-screen-image';
+            image.src = imageSrc;
+
+            overlay.appendChild(image);
+            document.body.appendChild(overlay);
+
+            overlay.addEventListener('click', function () {
+                document.body.removeChild(overlay);
+            });
+        });
+    });
